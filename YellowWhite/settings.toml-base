@@ -1,0 +1,76 @@
+# settings.toml - Zynthian MIDI/OSC controller configuration
+# Only strings and integers are supported - no arrays, no floats
+
+# ── WiFi ────────────────────────────────────────────────────────────────
+WIFI_SSID = "*******"
+WIFI_PASSWORD = "*********"
+
+MACHINE="YELLOW-WHITE"
+OUTPUT_MIDI_CHANNEL = "1"
+OUTPUT_ENABLED_FORMATS = "log, midi, osc, test"
+OUTPUT_TEST_ENABLED = "true"
+STARTUP_PROGRAM = "pico_circuitp_asyncio_osc_cuia_sleep.py"
+TEST_PROGRAMME_1 = "pico_circuitp_MIDI_test_asyncio.py"
+
+# Display Brightness (1-100)
+DISPLAY_BRIGHTNESS = 1
+
+# Optional extras you might add later
+# LOGGING_LEVEL = "DEBUG"
+# DISPLAY_BRIGHTNESS = 0.85
+
+# ── OSC Target (Zynthian) ───────────────────────────────────────────────
+OSC_HOST = "192.168.0.5"
+OSC_PORT = 1370
+
+# ── RGB LED pins ────────────────────────────────────────────────────────
+LED_RED_PIN   = "GP28"
+LED_GREEN_PIN = "GP27"
+LED_BLUE_PIN  = "GP26"
+
+# ── LED flash durations (in seconds, as string because float not supported)
+LED_FLASH_DURATION_SEC = "0.40"
+LED_ROT_FLASH_DURATION_SEC = "0.12"
+
+# ── Button timing thresholds (in seconds, as string)
+BUTTON_SHORT_THRESHOLD_SEC = "0.30"
+BUTTON_BOLD_THRESHOLD_SEC = "1.00"
+BUTTON_LONG_THRESHOLD_SEC = "2.00"
+BUTTON_DEBOUNCE_TIME_SEC = "0.025"
+
+# ── Polling / loop interval (seconds)
+POLL_INTERVAL_SEC = "0.008"
+
+# ── Encoders (0–3) ──────────────────────────────────────────────────────
+ENCODER_0_NAME   = "Chain"
+ENCODER_0_SWITCH = "GP2"
+ENCODER_0_A      = "GP4"
+ENCODER_0_B      = "GP3"
+
+ENCODER_1_NAME   = "Back"
+ENCODER_1_SWITCH = "GP6"
+ENCODER_1_A      = "GP8"
+ENCODER_1_B      = "GP7"
+
+ENCODER_2_NAME   = "Snapshot"
+ENCODER_2_SWITCH = "GP21"
+ENCODER_2_A      = "GP19"
+ENCODER_2_B      = "GP20"
+
+ENCODER_3_NAME   = "Select"
+ENCODER_3_SWITCH = "GP17"
+ENCODER_3_A      = "GP15"
+ENCODER_3_B      = "GP16"
+
+# ── Simple momentary switches (4–7) ─────────────────────────────────────
+SWITCH_4_NAME = "S1"
+SWITCH_4_PIN  = "GP10"
+
+SWITCH_5_NAME = "S2"
+SWITCH_5_PIN  = "GP11"
+
+SWITCH_6_NAME = "S3"
+SWITCH_6_PIN  = "GP12"
+
+SWITCH_7_NAME = "S4"
+SWITCH_7_PIN  = "GP13"

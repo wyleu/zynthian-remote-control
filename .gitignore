@@ -1,0 +1,14 @@
+.fseventsd/
+.Trashes
+.Trash-1000/
+.metadata_never_index
+boot_out.txt
+sd/
+*.pyc
+__pycache__/
+# keep lib/*.mpy if you want a clone to deploy without circup;
+# uncomment the next line to omit binaries instead:
+# *.mpy
+settings.toml
+archive/
+.Trash-1000
